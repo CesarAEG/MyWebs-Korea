@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+html {
+    font-family: "Malgun Gothic", sans-serif;
+    font-size: 16px;
+    color: #222328;
+}
+body, h1, h2, h3, h4, h5, p, ul, ol, dl, section, article, address, header, footer, nav, select {
+    margin: 0;
+    padding: 0;
+}
+a {
+    background-color: transparent;
+    color: #222328;
+    text-decoration: none;
+}
+ul, ol, dl {
+    list-style: none;
+}
+img {
+    border: 0;
+}
+
+#container {
+    width: 1000px;
+    height: 650px;
+    background: #fff;
+    position: relative;
+}
+
+/* Pop up area */
+
+#modal {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 250px;
+    margin-left: -150px; /* width 300 / 2 */
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #333;
+    padding: 20px;
+    /* box-shadow: 1px 1px 2px #676767; */
+    box-sizing: border-box;
+    z-index: 9999;
+}
+#modal h1 {
+    font: 18.5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #222328;
+    margin-bottom: 15px;
+}
+#modal p {
+    font-size: 13.5px;
+    text-align: justify;
+    line-height: 160%;
+}
+#modal button.cls {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background: none;
+    border: 1px solid #222328;
+    padding: 5px 7.5px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+}
