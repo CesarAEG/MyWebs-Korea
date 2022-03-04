@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* Main contents */
+
+#main {
+    width: 1200px;
+    height: 200px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+#main section.cont {
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+    .cont h3 {
+        height: 30px;
+        width: 100px;
+    }
+    .cont h3 a {
+        font-size: 16.5px;
+        background-color: #00c73c;
+        height: 30px;
+        line-height: 25px;
+        padding: 2.5px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .cont.notice ul {
+        padding: 15px 15px 10px;
+    }
+    .cont.notice ul li {
+        height: 30px;
+        line-height: 30px;
+    }
+    .cont.notice ul li a {
+        color: #737373;
+    }
+    .cont.notice ul li a:hover {
+        color: #111;
+    }
+    .cont.gallery ul {
+        padding-top: 25px;
+    }
+    .cont.gallery ul li {
+        width: 120px;
+        height: 90px;
+        float: left;
+        margin-right: 20px;
+    }
+    .cont.gallery ul li:last-child {
+        margin: 0;
+    }
+    .cont.gallery ul li a {
+        width: 120px;
+        height: 90px;
+        overflow: hidden;
+    }
+    .cont.gallery ul li a img {
+        width: 150px;
+        /* margin-left: -15px; */
+        /* margin-top: -10px; */
+        margin:-10px -15px;
+    }
+    .cont.shortcut div.shortcut-blk {
+        width: 100%;
+        height: 170px;
+        overflow: hidden;
+        position: relative;
+    }
+    .cont.shortcut div.shortcut-blk a {
+        height: 100%;
+        width: 100%;
+    }
+    .cont.shortcut div.shortcut-blk a img {
+        width: 100%;
+        margin-top: -45px;
+    }
+    .cont.shortcut div.shortcut-blk a h4 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        color: #eee;
+        font-size: 14.5px;
+        text-align: center;
+    }
