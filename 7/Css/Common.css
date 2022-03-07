@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+html {
+    font-family: "Malgun Gothic", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, form, table {
+    padding: 0;
+    margin: 0;
+}
+ul, ol, dl {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    background: transparent;
+    display: block;
+}
+img {
+    display: block;
+}
+body {
+    background-color: #fff;
+}
+div#container {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+#header, #slideshow, #main, #footer {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+#header {
+    height: 100px;
+    position: relative;
+}
+#header h1.logo {
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    float: left;
+}
+#header h1.logo a {
+    width: 100%;
+    height: 100%;
+}
+#header h1.logo a img {
+    width: 100%;
+    height: 40px;
+}
+#header nav.main-nav {
+    width: 800px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 30px;
+    float: right;
+}
+#header nav.main-nav > ul {
+    height: 40px;
+    width: 100%;
+}
+#header nav.main-nav > ul > li {
+    height: 100%;
+    width: 190px;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 10px;
+    position: relative;
+    z-index: 100;
+}
+#header nav.main-nav > ul > li:hover > a {
+    background-color:  #2e8c8f;
+    color: #eee;
+} 
+#header nav.main-nav > ul > li > a {
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2e8c8f;
+}
+#header nav.main-nav ul.sub-nav {
+    width: 100%;
+    height: 160px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    display: none;
+}
+#header nav.main-nav ul.sub-nav li {
+    height: 26px;
+    width: 100%;
+    margin-bottom: 4px;
+}
+#header nav.main-nav ul.sub-nav li a {
+    height: 100%;
+    line-height: 26px;
+    text-align: center;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #d2d2d2;
+}
+#header nav.main-nav ul.sub-nav li:hover a {
+    background: #00acd0;
+    color: #efefef;
+}
+#header div.nav-bg {
+    width: 100%;
+    height: 160px;
+    background-color: #434748;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 99;
+    display: none;
+}
+#header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#slideshow {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#slideshow div.slides {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#slideshow div.slides div.sld {
+    width: 1200px;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#slideshow div.slides div.sld a {
+    width: 100%;
+    height: 100%;
+}
+#slideshow div.slides div.sld a img {
+    width: 100%;
+}
+#slideshow div.slides div.sld a h2{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px;
+    font-weight: normal;
+}
+#slideshow div.slides div.sld.t1 a h2 {
+    left: 0;
+    top: 0;
+    font-size: 27px;
+    color: #434343;
+    letter-spacing: -3px;
+    line-height: 160%;
+} 
+#slideshow div.slides div.sld.t1 a h2 span:nth-child(1) {
+    display: block;
+    font-size: 36px;
+    color: #efefef;
+    text-shadow: 0 0 5px #333;
+} 
+#slideshow div.slides div.sld.t1 a h2 span:nth-child(2) {
+    margin-top: 7.5px;
+    display: block;
+    height: 55px;
+    line-height: 55px;
+    background: #efefef;
+    color: #2e8c8f;
+    font-size: 48px;
+    padding-right: 10px;
+}
+#slideshow div.slides div.sld.t2 a h2 {
+    left: 0;
+    bottom: 0;
+    font-size: 32px;
+    letter-spacing: -3px;
+    word-spacing: 5px;
+    color: #676767;
+}
+#slideshow div.slides div.sld.t2 a h2 > span {
+    display: block;
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 1px 1px 5px #434748;
+}
+#slideshow div.slides div.sld.t2 a h2 span span {
+    background: #00acd0;
+    color: #fff;
+    text-shadow: none;
+    width: 300px;
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+#slideshow div.slides div.sld.t3 a h2 {
+    right: 10px;
+    top: 10px;
+    font-size: 27px;
+    padding: 5px 10px;
+    text-align: right;
+}
+#slideshow div.slides div.sld.t3 a h2 span {
+    background-color: #00acd0;
+    color: #efefef;
+    display: block;
+    font-size: 36px;
+}
+#main {
+    height: 200px;
+}
+#footer {
+    height: 100px;
+    box-sizing: border-box;
+    border-top: 3px solid #aaa;
+    background-color: #efefef;
+}
+#footer h1.logo_gray {
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    float: left;
+}
+#footer h1.logo_gray a {
+    width: 100%;
+    height: 100%;
+}
+#footer h1.logo_gray a img {
+    width: 100%;
+    height: 40px;
+}
+#footer div.copy {
+    width: 800px;
+    float: left;
+    height: 70px;
+    text-align: center;
+    color: #676767;
+    padding-top: 30px;
+    line-height: 130%;
+}
+#footer div.copy address {
+    font-size: 12.5px;
+    letter-spacing: 1px;
+}
+#footer div.copy p {
+    font-size: 11.5px;
+    letter-spacing: 1.5px;
+}
+#footer div.site {
+    width: 200px;
+    float: left;
+    height: 60px;
+    padding-top: 40px;
+    text-align: center;
+}
+#footer div.site select {
+    border: 2px solid #2e8c8f;
+    padding: 5px 8px;
+    font-size: 14px;
+    letter-spacing: -0.7px;
+    border-radius: 5px;
+    background: none;
+    color: #434748;
+    font-weight: 600;
+}
+#modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: none;
+}
+#modal div.popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    height: 400px;
+    box-sizing: border-box;
+    margin: -200px 0 0 -300px;
+    background: linear-gradient(45deg, #2e8c8f, #00acd0);
+}
+#modal div.popup > div {
+    width: 590px;
+    height: 390px;
+    margin: 5px auto;
+    background: #fff;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+#modal div.popup h2 {
+    color: #434748;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+}
+#modal div.popup p {
+    color: #434748;
+    font-size: 13px;
+    line-height: 180%;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px;
+}
+#modal div.popup button.cls {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: none;
+    color: #999;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border: none;
+}
+#modal div.popup button.cls:hover {
+    color: #333;
+    cursor: pointer;
+}

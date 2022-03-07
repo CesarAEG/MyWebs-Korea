@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+#main section.content {
+    height: 200px;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px 5px;
+}
+#main section.notice {
+    width: 500px;
+}
+#main section.gallery, #main section.banner {
+    width: 350px;
+}
+#main section.content h3 {
+    height: 30px;
+}
+#main section.content h3 a {
+    height: 100%;
+    line-height: 30px;
+    font-size: 18px;
+    color: #333;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+#main section.content h3 a > span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    box-sizing: border-box;
+    border: 4px solid #2e8c8f;
+    margin: 5px 6px 5px 0;
+    /* transform: rotate(45deg); */
+    border-radius: 10px;
+}
+#main section.content h3 a span span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    box-sizing: border-box;
+    background: #2e8c8f;
+    margin: 3px auto;
+    border-radius: 3px;
+}
+#main .notice ul {
+    height: 120px;
+    padding-top: 15px;
+}
+#main .notice ul li {
+    height: 30px;
+}
+#main .notice ul li:nth-child(even) {
+    background: #efefef;
+}
+#main .notice ul li a {
+    height: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    letter-spacing: -1px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+#main .notice ul li:hover a {
+    background: #00acd0;
+    color: #fff;
+}
+#main .notice ul li a span {
+    display: block;
+    float: right
+}
+#main .gallery ul {
+    padding-top: 20px;
+}
+#main .gallery ul li {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#main .gallery ul li:last-child {
+    margin: 0;
+}
+#main .gallery ul li a {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+#main .gallery ul li a img {
+    width: 150px;
+    height: 100%;
+    margin-left: -25px;
+    opacity: 0.6;
+}
+#main .gallery ul li:hover a img {
+    opacity: 1;
+    transition: all 0.3s;
+}
+#main .banner ul {
+    padding-top: 20px;
+}
+#main .banner ul li {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#main .banner ul li:nth-child(3) {
+    margin: 0;
+} 
+#main .banner ul li a {
+    width: 100px;
+    height: 80px;
+    padding-top: 20px;
+}
+#main .banner ul li a > div {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#main .banner ul li a > div img {
+    width: 40px;
+    height: 40px;
+}
+#main .banner ul li:hover a > div img:first-child {
+    margin-top: -40px;
+    transition: all 0.3s;
+}
+#main .banner ul li a h4 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+#main .banner ul li:hover a h4 {
+    color: #00acd0;
+}
+/* #main::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
