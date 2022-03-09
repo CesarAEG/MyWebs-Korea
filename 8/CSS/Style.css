@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+#main section.content {
+    height: 200px;
+    box-sizing: border-box;
+    float: left;
+    padding: 5px 5px;
+}
+#main section.notice, section.gallery {
+    width: 325px;
+}
+#main section.banner {
+    width: 150px;
+}
+#main section.content h3 {
+    height: 30px;
+}
+#main section.content h3 a {
+    height: 100%;
+    line-height: 30px;
+    font-size: 18px;
+    color: #00397d;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+#main .notice ul {
+    height: 150px;
+    padding-top: 10px;
+}
+#main .notice ul li {
+    height: 25px;
+}
+#main .notice ul li:nth-child(even) {
+    background: #efefef;
+}
+#main .notice ul li a {
+    height: 100%;
+    line-height: 25px;
+    font-size: 11.5px;
+    letter-spacing: -1px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+#main .notice ul li:hover a {
+    background-color: rgba(0, 174, 239, 0.8);
+    color: #00397d;
+}
+#main .notice ul li a span {
+    display: block;
+    float: right;
+}
+#main .gallery ul {
+    padding-top: 35px;
+}
+#main .gallery ul li {
+    width: 100px;
+    float: left;
+    margin-right: 7px;
+    overflow: hidden;
+}
+#main .gallery ul li:last-child {
+    margin: 0;
+}
+#main .gallery ul li a {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+#main .gallery ul li a img {
+    width: 100px;
+    height: 200px;
+    opacity: 0.6;
+    margin-top: -45px;
+}
+#main .gallery ul li:first-child a img {
+    margin-top: 0;
+}
+#main .gallery ul li:hover a img {
+    opacity: 1;
+    transition: all 0.3s;
+}
+#main .banner ul {
+    padding-top: 25px;
+}
+#main .banner ul li {
+    width: 67.5px;
+    height: 110px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 5px;
+    overflow: hidden;
+}
+#main .banner ul li:last-child {
+    margin: 0;
+}
+#main .banner ul li a {
+    width: 67.5px;
+    height: 100px;
+    padding-top: 20px;
+}
+#main .banner ul li a > div {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#main .banner ul li a > div img {
+    width: 45px;
+    height: 45px;
+}
+#main .banner ul li:hover a > div img:first-child {
+    margin-top: -45px;
+    transition: all 0.3s;
+}
+#main .banner ul li a h4 {
+    padding-top: 5px;
+    height: 45px;
+    line-height: 20px;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+#main .banner ul li:hover a h4 {
+    color: #666666;
+}
