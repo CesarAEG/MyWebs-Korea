@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+html {
+    font-family: "Malgun Gothic", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+body, h1, h2, h3, h4, h5, h6, ul, ol, dl, form, table {
+    padding: 0;
+    margin: 0;
+}
+ul, ol, dl {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    background: transparent;
+    display: block;
+}
+img {
+    display: block;
+}
+body {
+    background-color: #efefef;
+}
+div#container {
+    width: 100%;
+    height: 700px;
+    background-color: #efefef;
+}
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: #411313;
+}
+#header section.header-section {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+} 
+#header h1.logo {
+    height: 100px;
+    width: 200px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    float: left;
+}
+#header h1.logo a {
+    height: 40px;
+    width: 200px;
+}
+#header h1.logo a img {
+    height: 40px;
+    width: 200px;
+}
+#header nav.main-nav {
+    width: 800px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 30px;
+    float: right;
+}
+#header nav.main-nav > ul {
+    width: 100%;
+    height: 40px;
+}
+#header nav.main-nav > ul > li {
+    height: 100%;
+    width: 190px;
+    float: left;
+    box-sizing: border-box;
+    border-bottom: 3px solid transparent;
+    position: relative;
+    z-index: 100;
+}
+#header nav.main-nav > ul > li:hover {
+    border-bottom: 3px solid #6a6a6a;
+}
+#header nav.main-nav > ul > li > a {
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #efefef;
+}
+#header nav.main-nav ul.sub-nav {
+    width: 100%;
+    height: 150px;
+    background-color: #411313;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 99;
+    display: none;
+}
+#header nav.main-nav ul.sub-nav li {
+    line-height: 26px;
+    width: 100%;
+    margin-bottom: 4px;
+}
+#header nav.main-nav ul.sub-nav li a {
+    height: 100%;
+    line-height: 26px;
+    text-align: center;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #efefef;
+}
+#header nav.main-nav ul.sub-nav li:hover a {
+    background-color: #af773b;
+    color: #333;
+}
+#slideshow {
+    margin: 0 auto;
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+#slideshow div.slides {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#slideshow div.slides div.sld {
+    width: 1200px;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#slideshow div.slides div.sld a {
+    width: 100%;
+    height: 100%;
+}
+#slideshow div.slides div.sld a img {
+    width: 100%;
+    height: 100%;
+}
+#slideshow div.slides div.sld a h2 {
+    position: absolute;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    line-height: 45px;
+}
+#slideshow div.slides div.sld.t1 a h2 {
+    color: #efefef;
+    background-color: rgba(175, 119, 59, 0.8);
+    width: 750px;
+    top: 120px;
+    left: 225px;
+    height: 50px;
+}
+#slideshow div.slides div.sld.t2 a h2 {
+    color: #efefef;
+    background-color: rgba(65, 19, 19, 0.8);
+    width: 700px;
+    top: 100px;
+    left: 250px;
+    height: 100px;
+}
+#slideshow div.slides div.sld.t3 a h2 {
+    color: #efefef;
+    background-color: rgba(106, 106, 106, 0.8);
+    width: 700px;
+    top: 100px;
+    left: 250px;
+    height: 100px;
+}
+#main {
+    margin: 0 auto;
+    width: 1200px;
+    height: 200px;
+}
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: #6a6a6a;
+}
+#footer section.footer-section {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+#footer h1.logo_gray {
+    height: 100px;
+    width: 200px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    float: left;
+}
+#footer h1.logo_gray a {
+    height: 40px;
+    width: 200px;
+}
+#footer h1.logo_gray a img {
+    height: 40px;
+    width: 200px;
+    filter: grayscale(1);
+}
+#footer div.menu {
+    width: 1000px;
+    height: 30px;
+    padding-top: 10px;
+}
+#footer div.menu ul {
+    width: 100%;
+    height: 100%;
+}
+#footer div.menu ul li {
+    float: right;
+    margin-left: 100px;
+}
+#footer div.menu ul li:last-child {
+    margin-left: 0px;
+}
+#footer div.menu ul li a {
+    text-align: center;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: bold;
+}
+#footer div.menu ul li:hover a {
+    color: #af773b;
+}
+#footer div.copy {
+    width: 1000px;
+    height: 60px;
+    padding-top: 5px;
+    float: right;
+    text-align: center;
+    line-height: 20px;
+    color: #ccc;
+    font-size: 14px;
+}
+#footer div.copy address {
+    letter-spacing: 1px;
+}
+#footer div.copy p {
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+#modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+#modal div.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    margin: -350px 0 0 -300px;
+    width: 650px;
+    height: 450px;
+    background-color: rgba(175, 119, 59, 1);
+}
+#modal div.popup > div {
+    margin: 5px auto;
+    box-sizing: border-box;
+    background: rgba(106, 106, 106, 0.75);
+    padding: 15px 20px;
+    width: 640px;
+    height: 440px;
+}
+#modal div.popup h2 {
+    font-size: 26px;
+    letter-spacing: -1px;
+    word-spacing: -1.5px;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+#modal div.popup p {
+    font-size: 12px;
+    text-align: justify;
+    width: 610px;
+    word-spacing: -0.5px;
+    letter-spacing: -0.5px;
+    margin-top: 20px;
+    color: #fff;
+}
+#modal div.popup p span {
+    font-size: 16px;
+    font-weight: bold;
+}
+#modal div.popup p span.silver {
+    color: silver;
+}
+#modal div.popup p span.gold {
+    color: gold;
+}
+#modal div.popup button.cls {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border: none;
+}
+#modal div.popup button.cls:hover {
+    cursor: pointer;
+    color: #333;
+}
