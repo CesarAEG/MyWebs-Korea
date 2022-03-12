@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+#main section.content {
+    width: 800px;
+    height: 200px;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px 5px;
+}
+#main section.tab, #main section.banner {
+    width: 300px;
+}
+#main section.shortcut {
+    width: 200px;
+}
+#main section.content h3 {
+    font-size: 16px;
+    border-bottom: 1px solid #2b2d2c;
+}
+#main section.content h3 a {
+    height: 100%;
+    width: 145px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #411313;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+#main ul.tabmenu {
+    float: left;
+    height: 200px;
+    width: 300px;
+    position: relative;
+}
+#main ul.tabmenu li h3 {
+    width: 145px;
+}
+#main ul.tabmenu > li {
+    float: left;
+    width: 145px;
+    line-height: 30px;
+}
+#main ul.tabmenu > li > h3 {
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid #2b2d2c;
+}
+#main ul.tabmenu > li > h3:hover {
+    background-color: rgba(1, 123, 160, 0.3);
+}
+#main ul.tabmenu > li:first-child  {
+    border-right: none;
+}
+#main ul.tabmenu > li.active > h3  {
+    background-color: rgba(1, 123, 160, 0.3);
+}
+#main ul.tabmenu > li div  {
+    position: absolute;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+}
+#main ul.tabmenu > li.active div  {
+    width: 293px;
+    height: 148px;
+    z-index: 1;
+}
+#main .notice ul {
+    height: 120px;
+    padding-top: 15px;
+}
+#main .notice ul li {
+    height: 30px;
+}
+#main .notice ul li:nth-child(even) a {
+    background-color: #6a6a6a;
+    color: #fff;
+}
+#main .notice ul li a {
+    height: 100%;
+    line-height: 30px;
+    font-size: 11px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+#main .notice ul li:hover a {
+    background-color: rgba(1, 123, 160, 0.3);
+    color: #2b2d2c;
+}
+#main .notice ul li a span {
+    display: block;
+    float: right;
+    padding-right: 10px;
+}
+#main .gallery ul {
+    padding-top: 15px;
+    position: relative;
+    width: 300px;
+    display: flex;
+}
+#main .gallery ul li {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#main .gallery ul li a {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+#main .gallery ul li a img {
+    height: 90px;
+    opacity: 0.6;
+    margin-left: -15px;
+}
+#main .gallery ul li:nth-child(3) a img {
+    margin-left: -5px;
+}
+#main .gallery ul li:hover a img {
+    opacity: 1;
+    transition: all 0.3s;
+}
+#main .banner ul, #main .shortcut ul {
+    width: 300px;
+    height: 150px;
+    padding-top: 25px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+#main .banner ul li {
+    width: 85px;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+#main .banner ul li:last-child {
+    margin-right: 0px;
+}
+#main .banner ul li a {
+    width: 85px;
+    height: 120px;
+}
+#main .banner ul li a img {
+    height: 85px;
+    width: 85px;
+}
+#main .banner ul li a h2 {
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color: #333;
+}
+#main .banner ul li:hover a img {
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+#main .banner ul li:hover a h2 {
+    color: #222328;
+    background-color: rgba(1, 123, 160, 0.3);
+}
+#main .shortcut ul li {
+    width: 60px;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-left: 2px;
+}
+#main .shortcut ul li:last-child {
+    margin-left: 0px;
+}
+#main .shortcut ul li a {
+    width: 58px;
+    height: 85px;
+    border: 1px solid transparent;
+}
+#main .shortcut ul li a img {
+    height: 40px;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+#main .shortcut ul li a h2 {
+    text-align: center;
+    font-size: 10px;
+    line-height: 20px;
+    color: #333;
+}
+#main .shortcut ul li:hover a {
+    border: 1px solid #017ba0;
+    background-color: rgba(1, 123, 160, 0.3);
+    transition: all 0.3s;
+    border-radius: 5px;
+}
