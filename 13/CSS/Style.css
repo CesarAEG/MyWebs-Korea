@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+#main section.content {
+    height: 200px;
+    box-sizing: border-box;
+    float: left;
+    padding: 5px 5px;
+}
+#main section.notice, #main section.banner {
+    width: 220px;
+}
+#main section.gallery {
+    width: 360px;
+}
+#main section.content h3 {
+    height: 30px;
+}
+#main section.content h3 a {
+    height: 100%;
+    line-height: 30px;
+    font-size: 18px;
+    color: #b11116;
+    border-bottom: 2px solid #ffd9da;
+    padding-left: 5px;
+    box-sizing: border-box; 
+}
+#main section.notice ul {
+    height: 150px;
+    padding-top: 10px;
+}
+#main section.notice ul li {
+    height: 25px;
+}
+#main section.notice ul li:nth-child(even) a {
+    background-color: #efefef;
+}
+#main section.notice ul li a {
+    height: 100%;
+    line-height: 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+#main section.notice ul li:hover a {
+    background-color: rgba(177, 17, 22, 0.15);
+    color: #b11116;
+}
+#main section.gallery ul {
+    padding-top: 15px;
+}
+#main section.gallery ul li {
+    width: 110px;
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+}
+#main section.gallery ul li:last-child {
+    margin-right: 0;
+}
+#main section.gallery ul li a {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+#main section.gallery ul li a img {
+    height: 110px;
+    opacity: 0.7;
+    margin-left: -20px;
+}
+#main section.gallery ul li:hover a img {
+    opacity: 1;
+    transition: all 0.3s;
+}
+#main section.banner ul {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#main section.banner ul li {
+    width: 80px;
+    height: 110px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 10px;
+}
+#main section.banner ul li:last-child {
+    margin-right: 0;
+}
+#main section.banner ul li a {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+#main section.banner ul li a img {
+    width: 45px;
+    height: 45px;
+    padding-left: 17.5px;
+}
+#main section.banner ul li a h2 {
+    padding-top: 5px;
+    line-height: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+#main section.banner ul li:hover a h2 {
+    color: #b11116;
+}

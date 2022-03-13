@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+html {
+    font-family: "Malgun Gothic", sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, form, table {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, dl {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+}
+img {
+    display: block;
+}
+body {
+    background-color: #ffffff;
+}
+div#container {
+    width: 1000px;
+    height: 650px;
+    overflow: hidden;
+}
+#slideshow, #main, #footer {
+    width: 800px;
+}
+#header {
+    width: 200px;
+    height: 650px;
+    float: left;
+    /* overflow: hidden; */
+    background-color: #f6f6f6;
+}
+#header h1.logo {
+    width: 100%;
+    height: 100px;
+}
+#header h1.logo a {
+    width: 100%;
+    height: 40px;
+    padding-top: 30px;
+}
+#header h1.logo a img {
+    width: 200px;
+    height: 40px;
+}
+#header nav.main-nav {
+    height: 400px;
+    width: 190px;
+    padding-left: 5px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+#header nav.main-nav > ul {
+    height: 100%;
+    width: 100%;
+}
+#header nav.main-nav > ul > li {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+    display: block;
+    border: 3px solid transparent;
+}
+#header nav.main-nav > ul > li:hover {
+    background-color: rgba(177, 17, 22, 0.15);
+    border: 3px solid #b11116;
+}
+#header nav.main-nav > ul > li > a {
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #b11116;
+    /* color: #f6f6f6; */
+    /* color: #ffd9da; */
+}
+#header nav.main-nav ul.sub-nav {
+    float: left;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 182px;
+    top: -3px;
+    display: none;
+    z-index: 100;
+}
+#header nav.main-nav ul.sub-nav li {
+    height: 30px;
+    width: 200px;
+    box-sizing: border-box;
+}
+#header nav.main-nav ul.sub-nav li a {
+    height: 30px;
+    width: 200px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffd9da;
+}
+#header nav.main-nav ul.sub-nav li:hover a {
+    background-color: #f6f6f6;
+    color: #b11116;
+}
+#header div.nav-bg {
+    width: 200px;
+    height: 280px;
+    background-color: #ffd9da;
+    position: absolute;
+    left: 190px;
+    top: 100px;
+    z-index: 99;
+    display: none;
+}
+#slideshow {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+#slideshow div.slides {
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#slideshow div.slides div.sld {
+    width: 800px;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#slideshow div.slides div.sld a {
+    width: 100%;
+    height: 100%;
+}
+#slideshow div.slides div.sld a img {
+    width: 100%;
+}
+#slideshow div.slides div.sld a h2 {
+    position: absolute;
+    box-sizing: border-box;
+    word-spacing: 3px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    top: 135px;
+    width: 800px;
+    background: linear-gradient(90deg, transparent, rgba(255, 217, 218, 0.8), transparent);
+}
+#main {
+    height: 200px;
+    overflow: hidden;
+}
+#footer {
+    height: 100px;
+    /* position: relative; */
+    overflow: hidden;
+    background-color: #f6f6f6;
+}
+#footer h1.logo {
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+    float: left;
+}
+#footer h1.logo a {
+    width: 100%;
+    height: 40px;
+    padding-top: 30px;
+}
+#footer h1.logo a img {
+    width: 200px;
+    height: 40px;
+    filter: grayscale(1);
+}
+#footer div.site {
+    width: 600px;
+    height: 30px;
+    padding-top: 30px;
+    float: right;
+}
+#footer div.site ul {
+    width: 100%;
+    height: 100%;
+    margin-left: -70px;
+}
+#footer div.site ul li {
+    float: right;
+    margin-left: 105px;
+}
+#footer div.site ul li:last-child {
+    margin: 0;
+}
+#footer div.site ul li a {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+#footer div.site ul li:hover a {
+    color: #b11116;
+}
+#footer div.copy {
+    width: 600px;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+}
+#footer div.copy p {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+}
+#modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    display: none;
+}
+#modal div.popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 350px;
+    height: 200px;
+    box-sizing: border-box;
+    margin: -100px 0 0 -150px;
+    background: linear-gradient(45deg, #b11116, #ffd9da);
+}
+#modal div.popup > div {
+    background: #f6f6f6;
+    width: 340px;
+    height: 190px;
+    margin: 5px auto;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+#modal div.popup h2{
+    color: #666666;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+#modal div.popup p {
+    color: #666666;
+    font-size: 12px;
+    line-height: 180%;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px;
+}
+#modal div.popup button.cls {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: none;
+    color: #666666;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    border: none;
+}
+#modal div.popup button.cls:hover {
+    color: #333;
+    cursor: pointer;
+}
